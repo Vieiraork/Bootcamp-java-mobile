@@ -10,11 +10,15 @@ o relacionamento com pessoas.
 
 
 
+
+
 ### O que é lógica?
 
 "Coerência de raciocínio de ideias" - Aurélio
 
 Capacidade de elaborar ideias concisas direcionando o pensamento para algo que faça sentido dentro de um conceito.
+
+
 
 
 
@@ -24,9 +28,13 @@ Capacidade de elaborar ideias concisas direcionando o pensamento para algo que f
 
 
 
+
+
 ### O que é metacognição?
 
 "Pensar como você pensa"
+
+
 
 
 

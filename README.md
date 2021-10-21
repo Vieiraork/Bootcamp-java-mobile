@@ -4,7 +4,6 @@ Bootcamp feito no programa de capacitação de trainee promovido pela Globalweb 
 
 ### Lista de conteúdos
 
-Lista de todos os conteúdos
 
 - Introdução a lógica de programação
     - [Lógica de programação](https://github.com/Vieiraork/Bootcamp-java-mobile/blob/main/1%20-%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20Essencial/1%20-%20Introdu%C3%A7%C3%A3o%20a%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o/1%20-%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o.md)
@@ -13,4 +12,3 @@ Lista de todos os conteúdos
     - [Concatenação](https://github.com/Vieiraork/Bootcamp-java-mobile/blob/main/1%20-%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20Essencial/1%20-%20Introdu%C3%A7%C3%A3o%20a%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o/4%20-%20Concatena%C3%A7%C3%A3o.md)
 
 - Introdução ao portugol
-    -  

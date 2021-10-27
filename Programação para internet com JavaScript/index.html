@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Página</title>
+    <style>
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #resultado {
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p>Função onclick + onmouseout</p>
+            <button type="button" onclick="button(this)" onmouseout="original()">Clique</button>
+        </div>
+        <div>
+            <p>Função onmouseover e onmouseout</p>
+            <button type="button" onmouseover="pass()" onmouseout="original()">Passe o mouse</button>
+        </div>
+        <div>
+            <p>Função onChange</p>
+            <select name="exemplo" id="ex" onChange="muda(this)">
+                <option value="Selecione um valor">Selecione um valor</option>
+                <option value="V1">Valor 1</option>
+                <option value="V2">Valor 2</option>
+                <option value="V3">Valor 3</option>
+            </select>
+        </div>
+    </div>
+    <div id="resultado">
+        <h2>Resultado</h2>
+        <h3 id="msg">a</h3>
+    </div>
+</body>
+</html>

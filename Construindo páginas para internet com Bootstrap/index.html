@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="my-css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Bootstrap - primeira página</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img src="img/dio.png" alt="Digital innovation one logo" id="menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#quem-somos">Quem somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#parceiros">Parceiros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="quem-somos">
+    <div class="container-fluid quem-somos text-center margin">
+      <h3>Quem somos</h3>
+      <img src="img/pexels-designecologist-1779487.jpg" alt="computador" class="rounded-circle img-quem-somos">
+      <h3>Somos um time comprometido com os resultados</h3>
+    </div>
+  </section>
+
+  <section id="parceiros">
+    <div class="container-fluid text-center margin">
+      <h3>Parceiros</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/pexels-tranmautritam-326501.jpg" alt="" class="rounded-circle img-quem-somos">
+          </div>
+          <div class="col-md-4">
+            <img src="img/pexels-tranmautritam-326501.jpg" alt="" class="rounded-circle img-quem-somos">
+          </div>
+          <div class="col-md-4">
+            <img src="img/pexels-tranmautritam-326501.jpg" alt="" class="rounded-circle img-quem-somos">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="container-fluid text-center margin servicos">
+      <h3>Serviços</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore obcaecati culpa doloremque quod suscipit accusamus ipsam dolorum, nesciunt blanditiis, repellendus quis deserunt a nihil aliquam dicta temporibus maxime aut in.</p>
+            <img src="img/py.png" alt="python" class="rounded-circle python">
+          </div>
+          <div class="col-lg-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere temporibus eum sint dolorem eaque odio incidunt aliquid, provident labore est harum doloribus dolores reiciendis molestiae illum consectetur placeat eius?</p>
+            <img src="img/py.png" alt="python" class="rounded-circle python">
+          </div>
+        </div>
+      </div>
+    </div>
+    <dl>
+      <dt>Chia</dt><dd>Rico em proteína.</dd>
+      <dt>Batata</dt><dd>Rico em carboidratos.</dd>
+      <dt>Linhaça</dt><dd>Rico em ômega-3.</dd>
+      </dl>
+  </section>
+
+  <footer class="container-fluid text-center bg-footer">
+    <p>Desenvolvido por William Vieira</p>
+  </footer>
+</body>
+
+</html>

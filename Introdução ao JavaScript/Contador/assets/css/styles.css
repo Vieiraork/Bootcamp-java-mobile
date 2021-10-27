@@ -1,0 +1,57 @@
+:root {
+    --base: #BFEFFF;
+    --white: #fff;
+    --danger:	#FF4500;
+    --danger-border: #FF6347;
+    --danger-hover: #fc6a35;
+
+    --success: #228B22;
+    --success-boder: #7CFC00;
+    --success-hover: #2cac2c;
+}
+
+body {
+    background-color: var(--base);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 2rem;
+    height: 2rem;
+
+    color: var(--white);
+
+    border-radius: 50%;
+}
+
+#increment {
+    background-color: var(--success);
+    border: 1px solid var(--success-boder);
+}
+
+#increment:hover {
+    background-color: var(--success-hover);
+}
+
+#decrement {
+    background-color: var(--danger);
+    border: 1px solid var(--danger-border);
+}
+
+#decrement:hover {
+    background-color: var(--danger-hover);
+}
+
+#represent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+}

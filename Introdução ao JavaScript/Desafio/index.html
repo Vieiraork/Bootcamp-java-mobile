@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            border: 1px solid lightgray;
+            border-radius: 1rem;
+
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 50%;
+            margin-top: 10px;
+
+            font-size: 1.5rem;
+
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+
+        label {
+            margin-top: 10px;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 5rem;
+            height: 2rem;
+
+            border-radius: 5px;
+
+            font-weight: bold;
+        }
+
+        .btn-success {
+            border: 1px solid rgb(0, 143, 0);
+            background-color: green;
+            color: white;
+
+            margin: 5px;
+        }
+
+        .btn-success:hover {
+            background-color: rgb(0, 173, 0);
+            transition: 200ms;
+        }
+
+        .btn-danger {
+            border: 1px solid rgb(255, 62, 62);
+            background-color: red;
+            color: white;
+
+            margin: 5px;
+        }
+
+        .btn-danger:hover {
+            background-color: rgb(255, 70, 70);
+            transition: 200ms;
+        }
+
+        #respostas {
+            padding-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+        Exercício do curso de JavaScript.
+        Mistrado por: https://github.com/stebsnusch
+
+        Atividade
+        Crie uma função que recebe dois números como parâmetros.
+        Confira se os números são iguais.
+        Confira se a soma dos números é maior que 10 ou menor que 20.
+        Retorne uma string dizendo "Os números num1 e num2 não/são iguais. Sua soma é soma, que é maior/menor que 10 e maior/menor que 20".
+     -->
+    <div class="container">
+        <label for="num1">Numero 1</label>
+        <input type="text" name="num1" id="num1">
+
+        <label for="num2">Numero 2</label>
+        <input type="text" name="num2" id="num2">
+
+        <div class="btn-container">
+            <button class="btn-success" onclick="testeCondicional()">Enviar</button>
+            <button type="reset" class="btn-danger">Limpar</button>
+        </div>
+        <div class="container" id="respostas">
+
+        </div>
+    </div>
+    <script>
+        function testeCondicional() {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            let respostas = "";
+
+            parseInt(num1);
+            parseInt(num2);
+            if (!num1 || !num2) {
+                alert("Por favor, defina dois números.")
+                return
+            }
+
+            if (num1 == num2) {
+                respostas += `<p>Os números ${num1} e ${num2} são iguais</p>`;
+            } else {
+                respostas += `<p>Os números ${num1} e ${num2} são diferentes</p>`;
+            }
+
+            soma = parseInt(num1) + parseInt(num2);
+
+            if (soma < 10 && soma < 20) {
+                respostas += `<p>Sua soma é ${soma}, que é menor que 10 e menor que 20</p>`;
+            }
+
+            if (soma > 10 && soma < 20) {
+                respostas += `<p>Sua soma é ${soma}, que é maior que 10 e menor que 20</p>`;
+            }
+
+            if (soma > 10 && soma > 20) {
+                respostas += `<p>Sua soma é ${soma}, que é maior que 10 e maior que 20</p>`;
+            }
+
+            document.getElementById('respostas').innerHTML = respostas;
+        }
+    </script>
+</body>
+
+</html>
